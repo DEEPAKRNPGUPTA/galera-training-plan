@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MariaDB Galera Cluster – 32-Day Training Plan</title>
+  <style>
+    body {
+      background-color: #eaffea;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #064d00;
+    }
+    .author {
+      font-weight: bold;
+      font-size: 16px;
+      color: #2f4f4f;
+      margin-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #b6eeb6;
+    }
+    .phase-header {
+      background-color: #a8dca8;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="author">By Deepak Gupta</div>
+<h2>MariaDB Galera Cluster – 32-Day Training Plan (2 Hours/Day)</h2>
+<p><strong>💚 Note:</strong> This plan uses a green-themed format for clarity. Each phase is marked by a green-highlighted section.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Phase</th>
+      <th>Topic</th>
+      <th>Key Coverage</th>
+      <th>Duration</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr><td colspan='5' class='phase-header'>🔹 Phase 1</td></tr>
+<tr><td>1</td><td>Phase 1</td><td>Introduction to Galera</td><td>Replication types, Galera vs MySQL, Use cases</td><td>2 hours</td></tr>
+<tr><td>2</td><td>Phase 1</td><td>Galera Architecture</td><td>WSREP API, synchronous replication, quorum</td><td>2 hours</td></tr>
+<tr><td>3</td><td>Phase 1</td><td>Cluster Planning</td><td>System requirements, topology, network, ports</td><td>2 hours</td></tr>
+<tr><td>4</td><td>Phase 1</td><td>Linux Environment Setup</td><td>Host files, SSH keys, firewalls</td><td>2 hours</td></tr>
+<tr><td>5</td><td>Phase 1</td><td>MariaDB Installation</td><td>Package installation, service check</td><td>2 hours</td></tr>
+<tr><td>6</td><td>Phase 1</td><td>Galera Plugin Installation</td><td>Plugin config, enabling replication plugin</td><td>2 hours</td></tr>
+<tr><td>7</td><td>Phase 1</td><td>Initial Configuration</td><td>Editing my.cnf, galera.cnf, key parameters</td><td>2 hours</td></tr>
+<tr><td>8</td><td>Phase 1</td><td>Cluster Readiness Checklist</td><td>Port test, node ping, time sync</td><td>2 hours</td></tr>
+<tr><td colspan='5' class='phase-header'>🔹 Phase 2</td></tr>
+<tr><td>9</td><td>Phase 2</td><td>Bootstrapping First Node</td><td>galera_new_cluster, wsrep logs</td><td>2 hours</td></tr>
+<tr><td>10</td><td>Phase 2</td><td>Adding Nodes</td><td>Joining nodes to cluster, troubleshooting joins</td><td>2 hours</td></tr>
+<tr><td>11</td><td>Phase 2</td><td>SST and IST Explained</td><td>rsync, xtrabackup, donor-joiner roles</td><td>2 hours</td></tr>
+<tr><td>12</td><td>Phase 2</td><td>Cluster Setup Lab</td><td>Full 3-node cluster creation lab</td><td>2 hours</td></tr>
+<tr><td>13</td><td>Phase 2</td><td>Node Crash & Rejoin</td><td>Recovery process, SST/IST test</td><td>2 hours</td></tr>
+<tr><td>14</td><td>Phase 2</td><td>WSREP Monitoring</td><td>Key variables: cluster size, status</td><td>2 hours</td></tr>
+<tr><td>15</td><td>Phase 2</td><td>Flow Control Deep Dive</td><td>Write throttling, pause state, testing</td><td>2 hours</td></tr>
+<tr><td>16</td><td>Phase 2</td><td>Cluster Load Simulation</td><td>Load tests to trigger flow control</td><td>2 hours</td></tr>
+<tr><td colspan='5' class='phase-header'>🔹 Phase 3</td></tr>
+<tr><td>17</td><td>Phase 3</td><td>Backup Tools Overview</td><td>mysqldump, Mariabackup, pros & cons</td><td>2 hours</td></tr>
+<tr><td>18</td><td>Phase 3</td><td>Consistent Cluster Backups</td><td>Performing backup during live ops</td><td>2 hours</td></tr>
+<tr><td>19</td><td>Phase 3</td><td>SST Recovery Scenarios</td><td>Node deletion and rejoin with SST</td><td>2 hours</td></tr>
+<tr><td>20</td><td>Phase 3</td><td>Split-Brain Recovery</td><td>Handling split primary component</td><td>2 hours</td></tr>
+<tr><td>21</td><td>Phase 3</td><td>Log Analysis</td><td>Reading error logs and state transfers</td><td>2 hours</td></tr>
+<tr><td>22</td><td>Phase 3</td><td>Debugging Galera</td><td>Common issues, tips, wsrep diagnostics</td><td>2 hours</td></tr>
+<tr><td>23</td><td>Phase 3</td><td>Test Recovery Labs</td><td>Simulate crashes, split-brain fixes</td><td>2 hours</td></tr>
+<tr><td>24</td><td>Phase 3</td><td>Wrap-up on Recovery</td><td>Review recovery strategies and practices</td><td>2 hours</td></tr>
+<tr><td colspan='5' class='phase-header'>🔹 Phase 4</td></tr>
+<tr><td>25</td><td>Phase 4</td><td>Load Balancing Options</td><td>HAProxy vs ProxySQL – key differences</td><td>2 hours</td></tr>
+<tr><td>26</td><td>Phase 4</td><td>HAProxy Configuration</td><td>Install and route to Galera nodes</td><td>2 hours</td></tr>
+<tr><td>27</td><td>Phase 4</td><td>ProxySQL Setup</td><td>Read/write split, failover setup</td><td>2 hours</td></tr>
+<tr><td>28</td><td>Phase 4</td><td>Failover & Recovery Lab</td><td>Node crash with ProxySQL/HAProxy</td><td>2 hours</td></tr>
+<tr><td>29</td><td>Phase 4</td><td>Security in Galera</td><td>Firewall, user roles, password hardening</td><td>2 hours</td></tr>
+<tr><td>30</td><td>Phase 4</td><td>TLS Encryption Setup</td><td>SSL config for encrypted replication</td><td>2 hours</td></tr>
+<tr><td>31</td><td>Phase 4</td><td>User Privileges Management</td><td>Managing accounts across cluster</td><td>2 hours</td></tr>
+<tr><td>32</td><td>Phase 4</td><td>Security Wrap-up</td><td>Secure deployment checklist</td><td>2 hours</td></tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>
